@@ -1,0 +1,15 @@
+DELIMITER $$
+
+CREATE PROCEDURE PrintLoop(IN P INTEGER)
+BEGIN
+    DECLARE i INTEGER DEFAULT 1;
+
+    WHILE i <= P DO
+        SELECT REPEAT("* ", i);
+        SET i = i + 1;
+    END WHILE;
+END $$
+
+DELIMITER ;
+
+CALL PrintLoop(20);
