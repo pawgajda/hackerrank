@@ -1,5 +1,5 @@
 /*
-MySQL Sytnax, Calculating Mean:
+MySQL Sytnax, Calculating Median:
 */
 SET @rowindex := -1;
 
